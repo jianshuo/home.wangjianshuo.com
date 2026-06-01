@@ -1,0 +1,54 @@
+baseURL = "https://home.wangjianshuo.com/"
+title = "王建硕的博客"
+hasCJKLanguage = true
+relativeURLs = true        # emit page-relative links so the built site works
+canonifyURLs = false       # from file://, a subpath, or the custom domain alike
+enableRobotsTXT = true
+enableEmoji = true
+timeZone = "Asia/Shanghai"
+
+[pagination]
+  pagerSize = 20
+
+
+[taxonomies]
+  tag = "tags"
+
+[markup.goldmark.renderer]
+  unsafe = true          # allow passed-through <video>/<iframe> embeds
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[params]
+  description = "王建硕的中文博客存档"
+
+[[menu.main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = 10
+[[menu.main]]
+  identifier = "categories"
+  name = "分类"
+  url = "/categories/"
+  weight = 20
+[[menu.main]]
+  identifier = "cn"
+  name = "中文"
+  url = "/cn/"
+  weight = 15
+[[menu.main]]
+  identifier = "archive_en"
+  name = "Archive"
+  url = "/archive/"
+  weight = 30
+[[menu.main]]
+  identifier = "archives"
+  name = "中文归档"
+  url = "/cn/archive/"
+  weight = 35

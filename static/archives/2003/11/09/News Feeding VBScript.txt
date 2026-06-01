@@ -1,0 +1,13 @@
+On Error Resume Next
+Sub PrintNews()
+   strNewsHTML = ""
+   <MTEntries lastn="7">
+      strNewsHTML= strNewsHTML + "<a href=<$MTEntryLink$>#<$MTEntryID pad="1"$>><$MTEntryTitle$></a> <span class=posted><$MTEntryDate format="%B %d"$></span><br />"
+   </MTEntries>
+
+   Document.Write strNewsHTML
+End Sub
+
+Call PrintNews
+
+

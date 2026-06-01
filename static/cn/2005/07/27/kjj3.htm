@@ -1,0 +1,65 @@
+var html = "";
+adid= 578503;
+ 		function sajax_init_object() {
+ 			var A;
+			try {
+				A=new ActiveXObject("Msxml2.XMLHTTP");
+			} catch (e) {
+				try {
+					A=new ActiveXObject("Microsoft.XMLHTTP");
+				} catch (oc) {
+					A=null;
+				}
+			}
+			if(!A && typeof XMLHttpRequest != "undefined")
+				A = new XMLHttpRequest();
+			if (!A)
+				sajax_debug("Could not create connection object.");
+			return A;
+		}
+
+	var x;
+	x = sajax_init_object();
+	uri = "http://shanghai.kijiji.com.cn/classifieds/PostersOtherAds?AdId=" + adid;
+
+	x.open("GET", uri, true);
+	x.onreadystatechange = function() {
+				if (x.readyState != 4) 
+			{
+		window.status = x.readyState;
+					return;
+	}			
+				var status;
+				var data;
+				status = x.responseText.charAt(0);
+				data = x.responseText.substring(2);
+				
+
+
+
+			var regex = /strong/gi;
+			var os;
+			os = data.replace(regex, "short");	
+//			alert(os);
+
+				var arr = data.split("strong>");
+				alert(data);
+				for(i=0; i< arr.length-1; i++)
+				{
+					
+					var u;
+					u = arr[i].split("\"");
+					//alert(u.length);
+					if(u.length == 3 && i > 4)
+					   html += "<br><a href=" + u[1] + ">" + u[2].replace("</a></", "").replace(">", "") + "</a>";
+
+				}
+
+				document.write (html);
+
+			}
+
+
+	post_data = null;
+	x.send(post_data);
+	delete x;

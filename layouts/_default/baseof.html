@@ -1,0 +1,35 @@
+{{- $cn := or (eq .Type "cn") (hasPrefix .RelPermalink "/cn/") -}}
+{{- $home := cond $cn "/cn/" "/" -}}
+{{- $title := cond $cn "王建硕的博客" "Wangjianshuo's Blog" -}}
+{{- $tagline := cond $cn "生活在上海" "Life of Jian Shuo Wang in Shanghai" -}}
+<!doctype html>
+<html lang="{{ cond $cn "zh-cn" "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ $title }}{{ else }}{{ .Title }} · {{ $title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ $tagline }}{{ end }}">
+  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $title }}">{{ end }}
+  {{ partialCached "style.html" "style" }}
+</head>
+<body>
+<div id="banner"><a href="{{ $home }}">{{ $title }}<span class="description">{{ $tagline }}</span></a></div>
+<div id="menu">
+  {{- if $cn -}}
+  <a href="/cn/">首页</a><a href="/cn/archive/">归档</a><a href="/cn/category/">分类</a><a href="/">English</a>
+  {{- else -}}
+  <a href="/">Home</a><a href="/archive/">Archive</a><a href="/category/">Categories</a><a href="/cn/">中文</a>
+  {{- end -}}
+</div>
+<main>
+  {{ block "main" . }}{{ end }}
+</main>
+<footer class="site-footer">
+  {{- if $cn -}}
+  <p>作者：<a href="/cn/">王建硕</a> · © 2002–{{ now.Year }} · <a href="/cn/index.xml">RSS</a></p>
+  {{- else -}}
+  <p>By <a href="/">Jian Shuo Wang</a> · © 2002–{{ now.Year }} · <a href="/index.xml">RSS</a></p>
+  {{- end -}}
+</footer>
+</body>
+</html>

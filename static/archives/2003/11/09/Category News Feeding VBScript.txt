@@ -1,0 +1,15 @@
+On Error Resume Next
+
+Set vis = CreateObject("Scripting.Dictionary")
+
+<MTComments lastn="600" sort_order="descend">
+vis("<$MTCommentIP$>") = "<$MTCommentAuthor$>::<$MTCommentID$>"
+</MTComments>
+
+For Each e in Document.all
+	If UCase(e.TagName) = "A" Then
+		If vis(e.innerText) <> "" Then
+ 			e.insertAdjacentHTML "AfterEnd", " &nbsp;<a href='http://home.wangjianshuo.com/archives/comments.htm#" & vis(e.innerText) & "'><font color=red>" & vis(e.innerText) & "</font>"
+		End If
+	End If
+Next

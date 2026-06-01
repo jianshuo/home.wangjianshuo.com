@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+<meta http-equiv="Cache-Control" content="max-age=8640" forua="true"/>
+</head>
+<card id="menu" title="Sina WAP">
+<do type="prev" name="Prev" label="Back"><prev/></do>
+<p mode="nowrap">
+**&#x6B22;&#x8FCE;&#x8BBF;&#x95EE;&#x65B0;&#x6D6A;WAP**<br/>
+<a href="http://wap.sina.com.cn/cmcclist/list.wml">&#x7CBE;&#x5F69;&#x68A6;&#x7F51;</a><br/>
+<a href="http://wap.sina.com.cn/intru.wml">&#x6700;&#x65B0;&#x63A8;&#x8350;</a><br/>
+<a href="http://wap.sina.com.cn/news.wml">&#x65B0;&#x95FB;&#x4E2D;&#x5FC3;</a><br/>
+<a href="http://wap.sina.com.cn/shenghuo/index.wml">&#x751F;&#x6D3B;&#x670D;&#x52A1;</a><br/>
+<a href="http://wap.sina.com.cn/dlf/sina/index.wml">&#x56FE;&#x7247;&#x94C3;&#x58F0;</a><br/>
+<a href="http://wap.sina.com.cn/ent/index.wml">&#x6E38;&#x620F;&#x5A31;&#x4E50;</a><br/>
+<a href="http://wap.monternet.com/?userType=B&amp;serviceID=06030009">&#x6210;&#x4EBA;&#x7B11;&#x8BDD;</a><br/>
+<a href="http://wap.sina.com.cn/living/index.wml">&#x4E24;&#x6027;&#x65F6;&#x5C1A;</a><br/>
+<a href="http://wap.monternet.com/?userType=B&amp;serviceID=10131000">&#x5929;&#x6C14;&#x9884;&#x62A5;</a><br/>
+<a href="http://wap.sina.com.cn/english/index.wml">&#x82F1;&#x8BED;&#x5B66;&#x4E60;</a><br/>
+<a href="http://wap.sina.com.cn/finance/index.wml">&#x8D22;&#x7ECF;&#x4FE1;&#x606F;</a><br/>
+<a href="http://wap.sina.com.cn/friends.wml">&#x53CB;&#x60C5;&#x94FE;&#x63A5;</a><br/>
+<a href="http://wap.sina.com.cn/about.wml">&#x7F51;&#x7AD9;&#x58F0;&#x660E;</a>
+</p>
+</card>
+</wml>

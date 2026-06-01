@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h1 class="post-title">{{ .Title }}</h1>
+{{ $sec := .Params.catsection }}
+{{ $prefix := cond (eq $sec "cn") "/cn/category/" "/category/" }}
+{{/* collect slug -> name + count from posts in this section */}}
+{{ $pairs := dict }}
+{{ range where site.RegularPages "Type" $sec }}
+  {{ $names := .Params.categories }}
+  {{ range $i, $sl := .Params.catslugs }}
+    {{ $nm := index $names $i }}
+    {{ $cur := index $pairs $sl }}
+    {{ if $cur }}{{ $pairs = merge $pairs (dict $sl (dict "name" $nm "n" (add $cur.n 1))) }}
+    {{ else }}{{ $pairs = merge $pairs (dict $sl (dict "name" $nm "n" 1)) }}{{ end }}
+  {{ end }}
+{{ end }}
+<ul class="terms">
+  {{ range $sl, $v := $pairs }}
+  <li><a href="{{ $prefix }}{{ $sl }}/">{{ $v.name }} <small>({{ $v.n }})</small></a></li>
+  {{ end }}
+</ul>
+{{ end }}

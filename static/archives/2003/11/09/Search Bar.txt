@@ -1,0 +1,20 @@
+<html>
+<head>
+<style>
+h3 {font-family: verdana; }
+a,p {font-family:verdana;font-size:80%}
+body {margin:1}
+</style>
+</head>
+<body>
+<h3>Previous entries</h3>
+<MTArchiveList archive_type="Monthly">
+<a name="<$MTArchiveDate format="%Y%m"$>"></a>
+<p><$MTArchiveTitle$></p>
+<MTEntries>
+<nobr>&nbsp; <a href="<$MTEntryLink$>" target="_main"><$MTEntryTitle$></a></nobr><br/>
+</MTEntries>
+
+</MTArchiveList>
+</body>
+</html>

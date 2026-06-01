@@ -1,0 +1,242 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title><$MTEntryTitle$></title>
+<link rel="stylesheet" href="http://home.wangjianshuo.com/jianshuowangstyle.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<$MTBlogURL$>index.rdf" />
+<meta name="description" content="<$MTEntryExcerpt$>" />
+<meta name="keyword" content="<$MTEntryCategoryLabel$>" />
+<link rel="start" href="<$MTBlogURL$>" title="Home" />
+<MTEntryPrevious>
+<link rel="prev" href="<$MTEntryLink$>" title="<$MTEntryTitle$>" />
+</MTEntryPrevious>
+<MTEntryNext>
+<link rel="next" href="<$MTEntryLink$>" title="<$MTEntryTitle$>" />
+</MTEntryNext>
+<script type="text/javascript" language="javascript">
+<!--
+
+function OpenTrackback (c) {
+    window.open(c,
+                    'trackback',
+                    'width=480,height=480,scrollbars=yes,status=yes');
+}
+
+var HOST = '<$MTBlogHost$>';
+
+// Copyright (c) 1996-1997 Athenia Associates.
+// http://www.webreference.com/js/
+// License is granted if and only if this entire
+// copyright notice is included. By Tomer Shiran.
+
+function setCookie (name, value, expires, path, domain, secure) {
+    var curCookie = name + "=" + escape(value) + ((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+    document.cookie = curCookie;
+}
+
+function getCookie (name) {
+    var prefix = name + '=';
+    var c = document.cookie;
+    var nullstring = '';
+    var cookieStartIndex = c.indexOf(prefix);
+    if (cookieStartIndex == -1)
+        return nullstring;
+    var cookieEndIndex = c.indexOf(";", cookieStartIndex + prefix.length);
+    if (cookieEndIndex == -1)
+        cookieEndIndex = c.length;
+    return unescape(c.substring(cookieStartIndex + prefix.length, cookieEndIndex));
+}
+
+function deleteCookie (name, path, domain) {
+    if (getCookie(name))
+        document.cookie = name + "=" + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+}
+
+function fixDate (date) {
+    var base = new Date(0);
+    var skew = base.getTime();
+    if (skew > 0)
+        date.setTime(date.getTime() - skew);
+}
+
+function rememberMe (f) {
+    var now = new Date();
+    fixDate(now);
+    now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000);
+    setCookie('mtcmtauth', f.author.value, now, '', HOST, '');
+    setCookie('mtcmtmail', f.email.value, now, '', HOST, '');
+    setCookie('mtcmthome', f.url.value, now, '', HOST, '');
+}
+
+function forgetMe (f) {
+    deleteCookie('mtcmtmail', '', HOST);
+    deleteCookie('mtcmthome', '', HOST);
+    deleteCookie('mtcmtauth', '', HOST);
+    f.email.value = '';
+    f.author.value = '';
+    f.url.value = '';
+}
+
+//-->
+</script>
+
+<$MTEntryTrackbackData$>
+
+</head>
+
+<body>
+
+<a href="/"><div id="banner">
+<$MTBlogName$><br />
+<span class="description"><$MTBlogDescription$></span>
+</div></a>
+
+<div id="container">
+
+<div class="blog">
+
+<a href="/">Home<a/> | <MTCategories>
+  <a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$></a> |
+</MTCategories><a href="http://www.wangjianshuo.com">About me</a>
+</p>
+
+</div>
+
+
+<div class="blog">
+<div class="blogbody">
+<span class="title"><$MTEntryTitle$></span>
+<MTEntryCategories glue="  "> 
+<a href="<$MTCategoryArchiveLink$>">
+   <img border=0 src="http://<$MTBlogHost$>/archives/2003/03/26/<$MTEntryCategory$>.jpg" alt="Category: <$MTEntryCategory$>" vspace=5 hspace=5 align="right">
+</a> 
+</MTEntryCategories>
+<p class="small-note"><$MTEntryDate format="%A, %B %d, %Y"$></p>
+
+<$MTEntryBody$>
+
+<a name="more"></a>
+<$MTEntryMore$>
+
+<span class="posted">Posted by <$MTEntryAuthor$> at <$MTEntryDate$>
+<MTEntryIfAllowPings>
+| <a href="<$MTCGIPath$><$MTTrackbackScript$>?__mode=view&entry_id=<$MTEntryID$>" onclick="OpenTrackback(this.href); return false">TrackBack</a>
+</MTEntryIfAllowPings>
+<br /></span>
+
+</div>
+
+<div class="comments-head">Related Entries:</div>
+<ul><MTRelatedEntries>
+        <MTEntries lastn="6"> 
+	        <li><a href="<MTEntryLink>"><MTEntryTitle></a> - <i><$MTEntryDate format="%b %d, %Y"$></i> <span class="RankBar"><img height="4" alt="<$MTEntryCommentCount$> comment(s)"  width="<$MTEntryCommentCount$>0" align="absMiddle" border="0" src="http://home.wangjianshuo.com/archives/2003/08/20/screen-rank.bar.gif"></span>
+        </MTEntries> 
+</MTRelatedEntries>
+<MTEntryCategories glue=",">
+   <li>Other <a href="<$MTCategoryArchiveLink$>"><$MTCategoryCount$> articles</a> in 
+   <i><$MTEntryCategory$></i>
+   category
+</MTEntryCategories>
+</ul>
+
+<div class="comments-head">Ad</div>
+<br><center>
+<script type="text/javascript"><!--
+google_ad_client = "pub-8513779941474461";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center>
+<MTEntryIfAllowComments>
+
+<div class="comments-head"><a name="comments"></a>Comments</div>
+
+<MTComments>
+<div class="comments-body">
+<a name="<$MTCommentDate format="%I%M"$>"></a>
+<$MTCommentBody$>
+<span class="comments-post">Posted by: <b><$MTCommentAuthorLink show_email="0"$></b> on <$MTCommentDate$></span>
+</div>
+</MTComments>
+
+<div class="comments-head">Post a comment</div>
+
+<div class="comments-body">
+<form method="post" action="<$MTCGIPath$>mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+<input_HIDDEN type="hidden" name="static" value="http://home.wangjianshuo.com/scripts/thanksforcomment/thankyou.htm" />
+<input type="hidden" name="static" value="1">
+<input type="hidden" name="entry_id" value="<$MTEntryID$>" />
+
+Name: <br />
+<input name="author" /><br />
+Email Address: (will not show)<br />
+<input name="email" /><br />
+URL: (optional)<br />
+<input name="url" /><br />
+Comments:<br />
+<textarea name="text" rows="12" cols="60"></textarea><br /><br />
+Please let me know what do you think of this article. Your name will appear on the <a href="<$MTBlogURL$>">homepage</a> of this site so other readers and I can read your comment. For general comments, or comments regarding the whole site, use my <a href="http://home.wangjianshuo.com/archives/20030302_guestbook.htm">guestbook</a>. It may take up to <b>30 seconds</b> before the server returns a result. IP address recorded.<br/>
+<input type="checkbox" name="bakecookie" />Remember info?<br /><br />
+
+<input type="submit" name="preview" value="&nbsp;PREVIEW&nbsp;" />
+<input type="submit" name="post" value="&nbsp;POST&nbsp;" /> &lt;-- Please click POST only once<br />
+<input type="button" onclick="forgetMe(this.form)" value="FORGET PERSONAL INFORMATION" />
+</form>
+
+<script type="text/javascript" language="javascript">
+<!--
+document.comments_form.email.value = getCookie("mtcmtmail");
+document.comments_form.author.value = getCookie("mtcmtauth");
+document.comments_form.url.value = getCookie("mtcmthome");
+//-->
+</script>
+</MTEntryIfAllowComments>
+</div>
+</div>
+</div>
+
+<div class="comments-head">Navigation:</div>
+<ul>
+<li>Read <MTEntryPrevious>
+<a href="<$MTEntryPermalink$>"> previous</a> 
+</MTEntryPrevious>
+<MTEntryNext> or 
+<a href="<$MTEntryPermalink$>">next </a>
+</MTEntryNext>  article
+<li>Read <a href="http://home.wangjianshuo.com/scripts/today/go.asp?q=<$MTEntryDate format="%Y%m%d"$>">Today in Last Year</a>, or 
+<li>Read the <a href="http://home.wangjianshuo.com/archives.htm">complete list</a> of all entries, or 
+<li>Return to the <a href="http://home.wangjianshuo.com">homepage</a> of Wangjianshuo's blog.
+</ul>
+
+
+<!----------------Category Box As Reminder---------------->
+
+<FORM method=GET action=http://www.google.com/custom>
+<div class="comments-head">Actions</div>
+
+<ul><li><a href="http://home.wangjianshuo.com/scripts/sendtofriend/sendtofriend.asp?id=<$MTEntryID$>">Send this page</a> to a friend
+<li>Sign my <a href="http://home.wangjianshuo.com/archives/20030302_guestbook.htm">guestbook</a>
+<li><a href="http://home.wangjianshuo.com/archives.htm">Subscribe newsletter</a> to get notified when a new entry is posted, or
+<li><input maxLength="255" size="45" name="q" style="width:70%">&nbsp; <input type="submit" value="Search this site" name="sa"> <a target="_blank" href="http://home.wangjianshuo.com/mt26/mt.cgi?__mode=view&_type=entry&id=<$MTEntryID$>&blog_id=1"><img src="http://www.wangjianshuo.com/about/logos/dot.gif" width=3 height=3 border=0></a>
+          <input type="hidden" value="LW:795;L:http://home.wangjianshuo.com/archives/2003/04/13/screen-home.wangjianshuo.com-logo.PNG;LH:61;AH:center;GL:0;S:http://home.wangjianshuo.com;AWFID:90751b6033199769;" name="cof">
+          <input type="hidden" value="wangjianshuo.com" name="domains">
+          <input type="hidden" value="wangjianshuo.com" name="sitesearch">
+</ul>
+</form>
+<!----------------Category Box As Reminder---------------->
+
+<div class="comments-head">Featured Topics</div>
+<br>
+<script src="http://home.wangjianshuo.com/scripts/ads/ads.cgi"></script>
+</br>
+
+<center>
+&copy; 2002 - 2003 Jian Shuo Wang. All right reserved.</center>
+<script language="VBScript" src="http://www.wangjianshuo.com/include/pubs.vbs">
+</script>
+
+</body>
+</html>

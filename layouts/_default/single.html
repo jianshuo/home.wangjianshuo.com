@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{- $cn := hasPrefix .RelPermalink "/cn/" -}}
+{{- $catpre := cond $cn "/cn/category/" "/category/" -}}
+<article>
+  <h1 class="post-title">{{ .Title }}</h1>
+  <small class="posted">{{ cond $cn "作者：" "By " }}<a href="{{ cond $cn "/cn/" "/" }}">Jian Shuo Wang</a> {{ cond $cn "发表于：" "on " }}{{ .Date.Format "2006-01-02 15:04" }}
+    {{ $slugs := .Params.catslugs }}
+    {{ with .Params.categories }} · {{ range $i, $c := . }}<a href="{{ $catpre }}{{ index $slugs $i }}/">{{ $c }}</a> {{ end }}{{ end }}
+  </small>
+  {{ .Content }}
+  {{ with .Params.tags }}<div class="post-meta" style="margin-top:32px">{{ cond $cn "标签：" "Tags: " }}{{ range . }}<a href="/tags/{{ . | urlize }}/">#{{ . }}</a> {{ end }}</div>{{ end }}
+</article>
+<nav class="pagination">
+  {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+  {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+</nav>
+{{ end }}

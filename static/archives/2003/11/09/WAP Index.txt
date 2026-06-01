@@ -1,0 +1,89 @@
+<% 
+   '
+   ' Copyright 2003 Jian Shuo Wang
+   ' URL: http://wangjianshuo.com
+   ' Author: Jian Shuo Wang
+   ' Created: March 18, 2003
+   ' Description:
+   '   This page displays the latest comments
+   '   on any mobile phone supporting WAP.
+   ' 
+%>
+
+<% 
+   Response.ContentType="text/vnd.wap.wml" 
+   If Request("ID") = "" Then
+      Response.Expires = -1 
+   End If
+%>
+
+<% 
+   '
+   ' The standard header every card need
+   '
+%>
+
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<%
+
+   Select Case Request("ID") 
+
+   ' --------------------------------
+   '  Comment content
+   ' --------------------------------
+%>
+
+<MTComments lastn="10">
+<%
+	Case "<$MTCommentID$>":
+%>
+<card id="index" title="<$MTCommentAuthor$>">
+<$MTCommentBody$>
+<p>- by <$MTCommentEmail$> at <$MTCommentDate$> from <$MTCommentIP$></p>
+
+<p>[<a href="?">Back</a>]</p>
+<p>[<a href="#comment">Reply</a>]</p>
+</card>
+
+<card id="comment" title="Reply">
+<p> 
+Name:
+<input type="text" name="author" value="Jian Shuo Wang"/> 
+Email:<input type="text" name="email" value="jianshuo@hotmail.com"/> 
+Comment:<input type="text" name="text"/> 
+<anchor title="Post">
+   <go href="http://home.wangjianshuo.com/mt/mt-comments.cgi?static=1&amp;entry_id=<$MTCommentEntryID$>&amp;post=+POST+&amp;author=$(author)&amp;email=$(email)&amp;text=$(text) - posted from mobile via WAP"/>Post
+</anchor>
+
+</p> 
+</card>
+</MTComments>
+
+<%
+	Case "":
+
+   ' --------------------------------
+   '  Homepage - Comment Index
+   ' --------------------------------
+%>
+
+<card id="index" title="<$MTBlogName$>">
+<MTComments lastn="10">
+<p><a href="index.asp?id=<$MTCommentID$>"><$MTCommentAuthor$></a></p> 
+</MTComments>
+<p>* <a href="hits.cgi">Hits</a></p>
+</card>
+
+<%
+	Case Else:
+%>
+<card id="index" title="Wangjianshuo">
+<p>Something wrong with the page</p>
+<p><a href="?">Back</a></p>
+</card>
+<%
+   End Select
+%>
+</wml>

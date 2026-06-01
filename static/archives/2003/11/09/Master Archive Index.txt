@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="geo.position" content="31.2367;121.484">
+<meta name="ICBM" content="31.2367,121.484">
+<meta name="DC.title" content="<$MTBlogName$>"> 
+<title><$MTBlogName$></title>
+<link rel="stylesheet" href="http://home.wangjianshuo.com/jianshuowangstyle.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<$MTBlogURL$>index.rdf" />
+</head>
+<body>
+<div id="banner">
+<$MTBlogName$><br />
+<span class="description"><$MTBlogDescription$></span>
+</div>
+
+<div id="content">
+<a href="/">Home<a/> | <MTCategories>
+  <a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$></a> |
+</MTCategories><a href="http://www.wangjianshuo.com">About me</a>
+</p>
+
+<p><i>Daily journal by <a href="http://www.wangjianshuo.com/personal/">Jian Shuo Wang</a>, <a href="http://home.wangjianshuo.com/archives/categories/shanghai.htm">Shanghai</a>, 
+China</i></p>
+
+<h3>Current Column</h3>
+
+<ul>
+<MTEntries lastn="1">
+<li><a href="<$MTEntryLink$>"><$MTEntryTitle$></a> <span class="small-note"><$MTEntryDate format="%B %d, %Y" $></span></a>
+</MTEntries>
+</ul>
+
+<h3>Sign up Wangjianshuo's Blog Update</h3>
+
+<form method="post" action="http://home.wangjianshuo.com/mt26/mt-add-notify.cgi">
+<input type="hidden" name="blog_id" value="<$MTBlogID$>" />
+<input type="hidden" name="_redirect" value="/" />
+<b>Get a short newsletter</b> by email when a new entry goes online:<br>
+Your email address: <input name="email" size="40" />
+<input type="submit" value="Subscribe" /></p>
+</form>
+
+<p><b>Privacy policy:</b> Email address are <a href="http://home.wangjianshuo.com/archives/20030508_emails_and_privacy_policies.htm#privacy">never</a> sold or 
+given out to anybody. One short notice about once every two days.<br>
+Reply the email with unsubscribe as title to <b>unsubscribe.</b></p>
+
+<h3>Previous entries</h3>
+<p><small>Click <a href="http://home.wangjianshuo.com/archives/searchbar.htm" target="_search">here</a> to load the list into the search pane, making it easier to navigate through articles (updated weekly or so)</small></p>
+
+<MTArchiveList archive_type="Monthly">
+<a name="<$MTArchiveDate format="%Y%m"$>"></a>
+<$MTArchiveTitle$>
+<ul>
+<MTEntries>
+<li><a href="<$MTEntryLink$>"><$MTEntryTitle$></a> <span class="small-note"><$MTEntryDate format="%B %d, %Y" $></span>
+</MTEntries>
+</ul>
+</MTArchiveList>
+
+<a name="comments"></a>
+<h3>Recent comments</h3>
+<table border=0>
+<MTEntries recently_commented_on="20">
+   <MTComments lastn="1">
+       <tr><td><li><a href="<$MTEntryLink$>#<$MTCommentDate format="%I%M"$>">
+          <$MTCommentAuthor$> 
+       </a> </td><td><span class="small-note"> on <a href="<$MTEntryLink$>"><$MTEntryTitle$></a></span></td></tr>
+   </MTComments>
+</MTEntries>
+<tr><td colspan="2"><li>Return to <a href="http://home.wangjianshuo.com">homepage</a></td></tr>
+</table>
+
+<h3>Copyright</h3>
+
+<p>You are encouraged to <b><a href="http://home.wangjianshuo.com/archives/20030304_link_to_wangjianshuos_blog.htm">link</a></b> to the homepage of this site or individual 
+articles. <b>You can quote</b> the content of the article (less than 30%) for free, as 
+long as you provide a link back to the original page. If you want to use the 
+<b>whole article</b> and picture on this site, please notify me before doing that - I 
+will often give you the permission free of charge.</p>
+
+<h3>Questions?</h3>
+
+<p>If it is related to an <b>individual article</b>, leave a comment under the 
+article. If it is related to the <b>whole site</b>, sign the <a href="http://home.wangjianshuo.com/archives/20030302_guestbook.htm">guestbook</a> of this site. You are also welcome to email to me at 
+<a href="mailto:jianshuo&#64;hotmail&#46com">jianshuo&#64;hotmail&#46com</a>.</p>
+
+</div>
+<$MTInclude module="Footer"$>
+
+</body>
+</html>
