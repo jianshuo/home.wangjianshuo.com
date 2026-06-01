@@ -52,3 +52,6 @@ timeZone = "Asia/Shanghai"
   name = "中文归档"
   url = "/cn/archive/"
   weight = 35
+
+[minify]
+  disableJS = true
