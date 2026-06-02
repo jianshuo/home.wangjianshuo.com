@@ -16,3 +16,11 @@ wp-json-data/
 # served under static/archives/ that posts link to.
 /*.zip
 .gstack/
+
+# Full-resolution Flickr originals, archived for future use. Big binaries —
+# never committed. The linked/display copies under static/ are what git tracks.
+/originals/
+
+# transient script artifacts
+__pycache__/
+scripts/download.log
