@@ -5,7 +5,7 @@
   <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <span style="color:#6b7280">{{ .Count }}</span></a></li>
   {{ end }}
 </ul>
-{{- if hasPrefix .RelPermalink "/cn/" }}
+{{- if eq .RelPermalink "/tags/" }}
 <h2 style="margin-top:48px;font-size:16px;color:#6b7280;border-bottom:1px solid #e3e6ea;padding-bottom:4px">分类</h2>
 {{ $pairs := dict }}
 {{ range where site.RegularPages "Type" "cn" }}
