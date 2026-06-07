@@ -8,7 +8,7 @@
     {{ with .Params.categories }} · {{ range $i, $c := . }}<a href="{{ $catpre }}{{ index $slugs $i }}/">{{ $c }}</a> {{ end }}{{ end }}
   </small>
   {{ .Content }}
-  {{ with .Params.tags }}<div class="post-meta" style="margin-top:32px">{{ cond $cn "标签：" "Tags: " }}{{ range . }}<a href="/tags/{{ . | urlize }}/">#{{ . }}</a> {{ end }}</div>{{ end }}
+  {{ with .Params.tags }}<div class="post-meta" style="margin-top:32px">{{ cond $cn "标签：" "Tags: " }}{{ range . }}<a href="{{ cond $cn "/cn" "" }}/tags/{{ . | urlize }}/">#{{ . }}</a> {{ end }}</div>{{ end }}
 </article>
 <nav class="pagination">
   {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
