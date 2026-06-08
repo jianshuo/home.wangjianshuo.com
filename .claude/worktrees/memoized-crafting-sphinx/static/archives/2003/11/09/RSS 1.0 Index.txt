@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="<$MTPublishCharset$>"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:cc="http://web.resource.org/cc/"
+  xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="<$MTBlogURL$>">
+<title><$MTBlogName encode_xml="1"$></title>
+<link><$MTBlogURL$></link>
+<description><$MTBlogDescription encode_xml="1"$></description>
+<dc:language>en-us</dc:language>
+<dc:creator></dc:creator>
+<dc:date><MTEntries lastn="1"><$MTEntryDate format="%Y-%m-%dT%H:%M:%S" language="en"$><$MTBlogTimezone$></MTEntries></dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=<$MTVersion$>" />
+<MTBlogIfCCLicense>
+<cc:license rdf:resource="<$MTBlogCCLicenseURL$>" />
+</MTBlogIfCCLicense>
+
+<items>
+<rdf:Seq><MTEntries lastn="15">
+<rdf:li rdf:resource="<$MTEntryPermalink encode_xml="1"$>" />
+</MTEntries></rdf:Seq>
+</items>
+
+</channel>
+
+<MTEntries lastn="15">
+<item rdf:about="<$MTEntryPermalink encode_xml="1"$>">
+<title><$MTEntryTitle encode_xml="1"$></title>
+<link><$MTEntryPermalink encode_xml="1"$></link>
+<description><$MTEntryExcerpt encode_xml="1"$></description>
+<dc:subject><$MTEntryCategory encode_xml="1"$></dc:subject>
+<dc:creator><$MTEntryAuthor encode_xml="1"$></dc:creator>
+<dc:date><$MTEntryDate format="%Y-%m-%dT%H:%M:%S" language="en"$><$MTBlogTimezone$></dc:date>
+</item>
+</MTEntries>
+
+</rdf:RDF>

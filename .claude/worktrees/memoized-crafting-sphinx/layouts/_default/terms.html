@@ -1,0 +1,26 @@
+{{ define "main" }}
+<h1 class="post-title">{{ .Title }}</h1>
+<ul class="terms">
+  {{ range .Data.Terms.Alphabetical }}
+  <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <span style="color:#6b7280">{{ .Count }}</span></a></li>
+  {{ end }}
+</ul>
+{{- if eq .RelPermalink "/tags/" }}
+<h2 style="margin-top:48px;font-size:16px;color:#6b7280;border-bottom:1px solid #e3e6ea;padding-bottom:4px">分类</h2>
+{{ $pairs := dict }}
+{{ range where site.RegularPages "Type" "cn" }}
+  {{ $names := .Params.categories }}
+  {{ range $i, $sl := .Params.catslugs }}
+    {{ $nm := index $names $i }}
+    {{ $cur := index $pairs $sl }}
+    {{ if $cur }}{{ $pairs = merge $pairs (dict $sl (dict "name" $nm "n" (add $cur.n 1))) }}
+    {{ else }}{{ $pairs = merge $pairs (dict $sl (dict "name" $nm "n" 1)) }}{{ end }}
+  {{ end }}
+{{ end }}
+<ul class="terms">
+  {{ range $sl, $v := $pairs }}
+  <li><a href="/cn/category/{{ $sl }}/">{{ $v.name }} <small style="color:#6b7280">({{ $v.n }})</small></a></li>
+  {{ end }}
+</ul>
+{{- end }}
+{{ end }}

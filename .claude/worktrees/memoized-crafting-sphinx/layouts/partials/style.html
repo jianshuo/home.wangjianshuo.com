@@ -1,0 +1,98 @@
+<style>
+  /* Inspired by the original Wangjianshuo's Blog (banner, blue heading box,
+     blue underlined links, green quotes) but with modern, readable type. */
+  :root {
+    --ink:#1f2328; --muted:#6b7280; --link:#0b4f8a; --line:#e3e6ea;
+    --blue:#336699; --blue-bg:#eef3f8; --gold:#c8961e; --quote-bg:#f1f8f1;
+    --content: 760px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0 auto; padding: 0 20px 64px; max-width: var(--content);
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 17px; line-height: 1.72; color: var(--ink); background: #fff;
+  }
+  a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+  a:hover { color: #0a3c6b; }
+
+  /* Banner header */
+  #banner {
+    border: 1px solid #e2c68a; border-left: 4px solid var(--gold);
+    background: linear-gradient(#fbf7ec, #f5f9fd);
+    padding: 18px 22px; margin: 22px 0 4px; border-radius: 4px;
+  }
+  #banner a { color: var(--ink); text-decoration: none;
+    font-family: Georgia, "Songti SC", serif; font-size: 30px; font-weight: 700;
+    letter-spacing: .2px; }
+  .description { display: block; margin-top: 4px; color: var(--muted);
+    font-family: Georgia, serif; font-style: italic; font-size: 15px; }
+
+  #menu { display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 12px 2px 10px;
+    margin-bottom: 14px; border-bottom: 1px solid var(--line); font-size: 15px; }
+  #menu a { text-decoration: none; color: var(--blue); font-weight: 600; }
+  #menu a:hover { text-decoration: underline; }
+
+  /* Headings — keep the signature blue box, drop ALL-CAPS for readability */
+  h1, .post-title { font-size: 25px; line-height: 1.3; font-weight: 700;
+    border-left: 5px solid var(--blue); background: var(--blue-bg);
+    padding: 8px 14px; margin: 28px 0 14px; border-radius: 0 4px 4px 0; }
+  h2 { font-size: 20px; border-bottom: 2px solid var(--gold); padding-bottom: 4px;
+    margin: 28px 0 12px; }
+  h3 { font-size: 17px; color: var(--blue); margin: 22px 0 8px; }
+
+  p { margin: 0 0 1.1em; }
+  blockquote { background: var(--quote-bg); border-left: 4px solid #9bcf9b;
+    padding: 10px 16px; margin: 1.2em 0; color: #2f3a2f; border-radius: 0 4px 4px 0; }
+  blockquote p:last-child { margin-bottom: 0; }
+  small, .posted, .post-meta { color: var(--muted); font-size: 14px; }
+  .posted, .post-meta { display: block; margin: -4px 0 26px; }
+  .post-meta a, .posted a { color: var(--muted); }
+  strong { font-weight: 700; }
+
+  article img, article video, article iframe { max-width: 100%; height: auto;
+    border-radius: 4px; }
+  article img { display: block; margin: 14px 0; }
+  code { font-family: "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    font-size: .9em; background: #f3f4f6; padding: 1px 5px; border-radius: 4px; }
+  pre { background: #f6f8fa; border: 1px solid var(--line); border-radius: 6px;
+    padding: 12px 14px; overflow: auto; }
+  pre code { background: none; padding: 0; }
+
+  /* Post / archive lists */
+  .post-list { list-style: none; padding: 0; margin: 10px 0; }
+  .post-list li { padding: 11px 0; border-bottom: 1px solid var(--line);
+    display: flex; gap: 16px; justify-content: space-between; align-items: baseline; }
+  .post-list a { text-decoration: none; }
+  .post-list a:hover { text-decoration: underline; }
+  .post-list time { color: var(--muted); font-size: 14px; white-space: nowrap; flex-shrink: 0; }
+  .archive-year { border-bottom: 3px solid var(--blue); font-weight: 800;
+    font-size: 20px; margin: 30px 0 6px; padding-bottom: 2px; }
+  .archive-month { color: var(--blue); font-weight: 700; margin: 16px 0 2px; }
+  .pagination { display: flex; gap: 20px; justify-content: center; margin: 30px 0; }
+  .terms { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+  .terms li a { display: inline-block; padding: 5px 13px; border: 1px solid var(--line);
+    background: #fafbfc; border-radius: 999px; text-decoration: none; }
+
+  .site-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px; }
+
+  /* Comments — collapsed by default (<details>), subdued, small */
+  details.comments { margin-top: 42px; padding-top: 14px; border-top: 1px solid var(--line); }
+  summary.comments-head { cursor: pointer; font-size: 13px; font-weight: 600;
+    letter-spacing: .03em; text-transform: uppercase; color: var(--muted);
+    list-style-position: outside; user-select: none; }
+  summary.comments-head:hover { color: var(--link); }
+  details.comments[open] summary.comments-head { margin-bottom: 12px; }
+  .comment { font-size: 13.5px; line-height: 1.55; color: #555;
+    padding: 10px 0; border-bottom: 1px dotted var(--line); }
+  .comment:last-child { border-bottom: 0; }
+  .comment-meta { display: block; margin-top: 3px; color: #99a0a8; font-size: 12px; }
+
+  @media (max-width: 600px) {
+    body { font-size: 16px; padding: 0 16px 48px; }
+    #banner a { font-size: 25px; }
+    h1, .post-title { font-size: 22px; }
+  }
+</style>

@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title><$MTBlogName$></title>
+<link rel="stylesheet" href="http://home.wangjianshuo.com/jianshuowangstyle.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<$MTBlogURL$>index.rdf" />
+</head>
+<body>
+<div id="banner">
+<$MTBlogName$><br />
+<span class="description"><$MTBlogDescription$></span>
+<style>
+.Month01 {background-color:lightgreen;}
+.Month02 {background-color:Greenyellow;}
+.Month03 {background-color:Darkkhaki;}
+.Month04 {background-color:Yellowgreen;}
+
+.Month09 {background-color:Seagreen;}
+.Month10 {background-color:Lightslategray;}
+.Month11 {background-color:Lightsteelblue;}
+.Month12 {background-color:Mediumslateblue;}
+</style>
+</div>
+
+<div id="content">
+<a href="/">Home<a/> | <MTCategories>
+  <a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$></a> |
+</MTCategories><a href="http://www.wangjianshuo.com">About me</a>
+</p>
+
+<MTArchiveList archive_type="Monthly">
+<span class="Month<$MTArchiveDate format="%m"$>"><$MTArchiveDate format="%B"$></span>
+</MTArchiveList><p>
+
+<div class="blog">
+
+<!---------------------------->
+<!------ COMMENTS ------->
+<!---------------------------->
+
+<MTEntries recently_commented_on="1000">
+<h3><a href="<$MTEntryLink$>"><$MTEntryTitle$></a></h3>
+
+
+<MTComments sort_order="descend" lastn="2">
+        <div class="Month<$MTCommentDate format="%m"$>"><a name="<$MTCommentAuthor$>::<$MTCommentID$>"><$MTCommentDate format="%B %d, %Y"$></a> <a href="<$MTEntryLink$>#<$MTCommentDate format="%I%M"$>"><$MTCommentAuthor$></a>
+<a href="http://home.wangjianshuo.com/axs/ax-admin.cgi?format=Sort+All+by+Time&show_data=View+in+Database+Format&Filter=<$MTCommentIP$>"><img src="http://www.wangjianshuo.com/about/logos/dot.gif" width=3 border=0></a>
+
+<span class=comment-body><$MTCommentBody$></a>
+</div>
+   </MTComments>
+</table>
+
+</MTEntries>
+</div>
+
+<table>
+<MTComments lastn="10000">
+<tr><td><$MTCommentAuthor$><td><$MTCommentDate format="%Y-%m-%d" $></td></tr>
+</MTComments>
+</table>
+
+<script type="text/javascript">
+<!--
+	document.write('<img src="/axs/ax.cgi?trans.gif&ref=');
+	document.write(document.referrer);
+	document.write('" height="1" width="1" alt="" />');
+// -->
+</script>
+
+</body>
+</html>

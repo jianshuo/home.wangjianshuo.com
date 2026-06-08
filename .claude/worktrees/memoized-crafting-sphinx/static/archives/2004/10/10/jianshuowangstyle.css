@@ -1,0 +1,226 @@
+/*=========================================================
+/*   Copyright: Jian Shuo Wanag
+/*   Last Modified: 2:57 PM 9/11/2004
+/*   Used by Wangjianshuo's Blog at 
+/*       http://home.wangjianshuo.com
+/*   Permission: Feel free to use the element 
+/*       as long as this notice is not removed
+============================================================
+*/
+
+
+	
+body {
+	padding:0; 
+	margin-top: 0; 
+	margin-right: 80;
+	margin-left: 80; 
+	font-family: Verdana;
+	}
+	
+
+h1	{
+	text-transform: uppercase;
+	font-size:larger;
+	border:1px solid #336699; 
+	padding:5; 
+	width:100%;
+	background-color: #EAEFF4 
+	}
+	
+h2	{
+	border: 1px solid #CC9900; 
+	padding:3px 3px 3px 10px;
+	background-color: #FFCC66;
+	width:100%; 
+	font-weight:bold; 
+	font-size:larger;
+	margin-top:0px;
+	}
+
+h3, .boxblue, .sidetitle	{
+	border: 1px solid #87CEEB; 
+	padding:4px; 
+	background-color: #F0F8FF; 
+	font-size:10pt; }
+
+h6	{
+	font-size: 8pt;
+	font-weight:100 
+	}
+	
+textarea, input, select	{
+	font-family:verdana;
+	}
+	
+	
+blockquote {
+	font-style:italic;
+	background-color: #eeffee;
+	padding: 4px;
+	margin-left: 30px;
+	margin-right: 75px;
+	}
+
+small  {
+	color:#666;
+	font-size:smaller;
+	}		
+
+
+/*--- The section below are used for special element--*/
+
+.adsense {
+	float:right;
+	padding-left:20px;
+	padding-bottom:20px;
+	background-color:#ffffff;
+	}
+	
+#banner {
+	font-family:georgia, verdana, arial, sans-serif;
+	color:#000;
+	font-size:24px;
+	font-weight:bold;
+	border-left:1px solid #CC9900;	
+	border-right:1px solid #CC9900;  		
+	border-top:1px solid #CC9900;  		
+	border-bottom: 1px solid #CC9900;  		
+	background:#F0F8FF;
+	padding:15px;
+	margin-bottom: 10px; 	
+	text-decoration:none;	  		  		 	 
+	}
+			
+.description	{ 
+	font-size:small;
+	font-weight:500;
+	margin-top:1px;
+	}
+
+.title {margin-top:0px}
+
+.posted	{ 
+	font-size: x-small; 
+	color: #003366; 
+	margin-bottom:25px;
+	}
+	
+/*-- Comment related styles --*/
+
+.comments-head	{ 
+	color: #666; 
+	border-bottom:1px solid #999;
+	margin-top:20px;
+	font-weight:bold;
+ 	background:#FFF;		
+	}		
+
+.comments-body {
+	color:#666;
+	font-size:smaller;
+	background:#FFF;
+	padding-bottom:10px;
+	padding-top:10px;		
+	border-bottom:1px dotted #999; 					
+	}		
+
+.comments-post {
+	color:#666;
+	font-size:smaller;
+	background:#FFF;		
+	}	
+	
+/*-- Directory CSS  --*/
+
+sup.new	{
+	font-size: x-small;
+	color: #FFFFFF;
+	background: #FF3300;
+	font-weight: bold;
+}
+
+
+/* p, li, ul, div, td, tr, table { font-family: Verdana, arial, sans-serif;font-size:10pt;} */
+
+.boxorgange						{ border: 1px solid #EE793B; padding:4px; background-color: #FFFF99; font-family: Verdana; font-size:10pt; }
+
+.code 							{ font:courier;font-size:8pt;  border: 1px solid #87CEEB; padding:4px; background-color: #F0F8FF;}
+
+.nextlink 						{ color:green;font-weight:900;}
+.linknumber 					{ position:absolute;margine-left:-1;color:black;border: 1px solid #87CEEB;padding-left:3px;margin-top:-2;
+								  padding-right:3px;background-color: #F0F8FF;font-weight:800;cursor:hand;}
+								  
+.nav-header						{margin-bottom:10px}
+
+
+
+/* MovableType Blog specific tags */
+
+#menu 	{text-align:center;font-size:8pt;margin-bottom:15;}
+	
+
+			
+.OnThisPage {background-color:#eee}	
+
+
+
+
+
+
+.moretitle {
+	font-size:10px;
+	font-weight:900;
+	}
+	
+.moreexcerpt {
+	font-size: 9px;
+	}
+
+
+.Headings       { border-bottom:4px solid #336699; 
+                       text-transform:uppercase;
+                       font-weight:800;
+			}
+.Headlines      { border:1px solid #336699; 
+                       padding:5; 
+                       background-color: #EAEFF4 }
+.RedHeadings  { border-top: 4px solid #CC0000; 
+                       background-color: #003366;
+                       font-color: #FFFFFF;
+                       color: #FFFFFF;
+                       font-weight: 900; }
+.HeadingCaption {text-transform:uppercase;font-size:14pt;font-weight:900; }
+.ArchiveTitle    {font-size:130%;font-weight:800;}
+.RedLeftBar     {border-left: 5px solid #CC0000;
+                       margin-left:20;
+                       background-color:#EAEFF4 ;
+                       padding-left:8;
+                       padding-right:8;
+}
+
+.RankBar {width:100;overflow:hidden; }
+
+#idGoogleAdSense {float:right;padding-left:30;padding-top:5px;padding-bottom:10px;background-color:white;}
+
+
+
+/*	Popular links								*/
+sup.pop {
+font-size: x-small;
+color: #FFFFFF;
+background: #00CCFF;
+font-weight: bold;
+font-family: "verdana", "arial", "geneva", sans-serif;
+}
+
+/*	Number of links in categories						*/
+small.numlinks {
+font-size: x-small;
+color: #666666;
+background: #FFFFFF;
+font-family: "verdana", "arial", "geneva", sans-serif;
+}
+
+
+strong {font-size:120%;}

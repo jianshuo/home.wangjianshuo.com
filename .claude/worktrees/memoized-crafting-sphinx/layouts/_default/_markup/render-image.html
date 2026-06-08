@@ -1,0 +1,8 @@
+{{- $d := .Destination -}}
+{{- if hasPrefix $d "/" -}}
+  {{- $d = printf "%s%s" (site.Params.imageBaseURL | default "") $d -}}
+{{- end -}}
+<img src="{{ $d | safeURL }}"
+  {{- if eq .Ordinal 0 }} fetchpriority="high"{{ end }}
+  {{- with .Text }} alt="{{ . }}"{{ end }}
+  {{- with .Title }} title="{{ . }}"{{ end }} />

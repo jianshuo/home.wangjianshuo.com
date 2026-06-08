@@ -1,0 +1,26 @@
+.DS_Store
+._*
+public/
+resources/
+.hugo_build.lock
+wp-json-data/
+
+# WordPress migration inputs (one-time, local only — re-derivable, may hold secrets).
+# The raw export folder contains wordpress_db.sql (a full DB dump) — never commit it.
+# Root-anchored so it does NOT match static/wp-content/uploads/ (the served copy).
+/uploads/
+*.WordPress*.xml
+*.clean.xml
+*wordpress*.sql
+# Only root-level source zips (cn.zip, archives.zip) — NOT the .zip downloads
+# served under static/archives/ that posts link to.
+/*.zip
+.gstack/
+
+# Full-resolution Flickr originals, archived for future use. Big binaries —
+# never committed. The linked/display copies under static/ are what git tracks.
+/originals/
+
+# transient script artifacts
+__pycache__/
+scripts/download.log

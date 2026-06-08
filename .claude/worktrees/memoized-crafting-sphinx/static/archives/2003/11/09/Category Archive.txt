@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title><$MTBlogName$>: <$MTArchiveTitle$> Archives</title>
+
+<link rel="stylesheet" href="/jianshuowangstyle.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<$MTBlogURL$>index.rdf" />
+<style>
+.Headings       { border-bottom:4px solid #336699; 
+                       text-transform:uppercase;
+                       font-weight:800;}
+.Headlines      { border:1px solid #336699; 
+                       padding:5; 
+                       background-color: #EAEFF4 }
+.RedHeadings  { border-top: 4px solid #CC0000; 
+                       background-color: #003366;
+                       font-color: #FFFFFF;
+                       color: #FFFFFF;
+                       font-weight: 900; }
+.HeadingCaption {text-transform:uppercase;font-size:12pt;font-weight:900; }
+
+.ArchiveTitle    {font:14pt, arial; font-weight:800;}
+.RedLeftBar     {border-left: 5px solid #CC0000;
+                       margin-left:20;
+                       background-color:#EAEFF4 ;
+                       padding-left:8;
+                       padding-right:8;
+}
+
+</style>
+</head>
+
+<body>	
+
+<a href="/"><div id="banner">
+<$MTBlogName$><br />
+<span class="description"><$MTBlogDescription$></span>
+</div></a>
+
+<div id="container"> 
+<a href="/">Home<a/> | <MTCategories>
+  <a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$></a> |
+</MTCategories><a href="http://www.wangjianshuo.com">About me</a>
+<p / >
+<div class="blog">
+
+<p class="Headings"><b><font size="5" color="#AA0000"><$MTArchiveCategory$></font></b>
+
+<MTEntries lastn="1">
+<MTEntryCategories glue=" ">
+<a href="http://home.wangjianshuo.com/mt26/mt.cgi?__mode=view&_type=category&blog_id=1&id=<$MTCategoryID$>"><img  src="http://www.wangjianshuo.com/about/logos/dot.gif" width=3 height=3 border=0></a>
+</MTEntryCategories>
+</MTEntries>
+
+</p>
+
+<!----------------Headline big table-------------->
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="320">
+<!----------------Headline big table-------------->
+
+<img src="<$MTBlogArchiveURL$>2003/03/26/head_<$MTArchiveCategory$>.jpg" width="320"> <br/>
+
+<div class="Headlines">
+   <MTEntries lastn="1">
+   <a name="<$MTEntryID pad="1"$>"></a>
+   <span class="HeadingCaption"><$MTEntryTitle$></span><br/>
+   <p><$MTEntryExcerpt$></p>
+   <b><a href="<$MTEntryLink$>">FULL STORY</a></b>    </MTEntries>
+</div>
+<!----------------Headline big table-------------->
+</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="top" width="80%">
+<!----------------Headline big table-------------->
+<p class="RedHeadings">RECENT ENTRIES</p>
+
+<$MTEntries lastn="3" offset="1"$>
+<p><b><font size="4"><$MTEntryTitle$></font></b></p>
+      <p><img src="http://a1112.g.akamai.net/7/1112/492/2002091422/www.wired.com/news/v/20020914/images/cs3/icon13sec_hoo.gif" width="13" height="13"> 
+      <$MTEntryExcerpt$>
+      <b><a href="<$MTEntryLink$>">FULL STORY</a></b> </p>  
+</MTEntries>
+
+<!----------------Headline big table-------------->
+</td></tr></table>
+<!----------------Headline big table-------------->
+<p align=center>
+<div class="comments-head">Ad</div><br>
+<script type="text/javascript"><!--
+google_ad_client = "pub-8513779941474461";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</P>
+<p><$MTCategoryDescription$></p>
+
+
+<p class="RedHeadings">HISTORY ENTRIES</p>
+<MTEntries offset="4" lastn="1000">
+<p class="ArchiveTitle"><a name="<$MTEntryID pad="1"$>"></a>
+<a href="<$MTEntryLink$>"><$MTEntryTitle$></a> 
+  <span class="small-note"> | <$MTEntryCommentCount$> comment(s) | <$MTEntryDate format="%B %d, %Y"$> | </span>
+ </p>
+<p class="RedLeftBar"><$MTEntryExcerpt$></p>
+
+</MTEntries>
+
+<center>&copy; 2002 - 2003 Jian Shuo Wang. All Right Reserved.</center>
+ 
+</div>
+<script type="text/javascript">
+<!--
+	document.write('<img src="/axs/ax.cgi?trans.gif&ref=');
+	document.write(document.referrer);
+	document.write('" height="1" width="1" alt="" />');
+// -->
+</script>
+</body>
+</html>

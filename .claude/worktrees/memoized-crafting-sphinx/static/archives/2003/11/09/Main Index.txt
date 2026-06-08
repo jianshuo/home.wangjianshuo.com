@@ -1,0 +1,248 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="geo.position" content="31.2367;121.484">
+<meta name="ICBM" content="31.2367,121.484">
+<meta name="DC.title" content="<$MTBlogName$>"> 
+<title><$MTBlogName$></title>
+<link rel="stylesheet" href="http://home.wangjianshuo.com/jianshuowangstyle.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<$MTBlogURL$>index.rdf" />
+<meta name="key" value="master.com.content" / >  
+</head>
+<body>
+<div id="banner">
+<$MTBlogName$><br />
+<span class="description"><$MTBlogDescription$></span>
+</div>
+
+<div id="content">
+<a href="/">Home<a/> | <MTCategories>
+  <a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$></a> |
+</MTCategories><a href="http://www.wangjianshuo.com">About me</a>
+</p>
+<div class="blog">
+
+
+<!------Headline News Box---->
+<div class="Headlines">
+<!------Headline News Box---->
+
+<MTEntries lastn="1">
+
+<MTEntryCategories glue="  "> 
+<a href="<$MTCategoryArchiveLink$>">
+   <img border=0 src="/archives/2003/03/26/<$MTEntryCategory$>.jpg" alt="Category: <$MTEntryCategory$>" vspace=1 hspace=1 align="right">
+</a> 
+</MTEntryCategories>
+<span class="HeadingCaption"><$MTEntryTitle$></span><br/ >
+<span class="posted"><$MTEntryDate format="%A, %B %d, %Y"$></span>
+<p><$MTEntryExcerpt$></p>
+<a href="<$MTEntryLink$>"><b>FULL STORY</b></a> <small><$MTEntryCommentCount$> comment(s)</small>
+</MTEntries>
+
+<!------Headline News Box---->
+</div>
+<!------Headline News Box---->
+<br/>
+<!------Recent News---->
+<div class="Headlines" style="border:0">
+<!------Recent News---->
+
+<div class="Headings">PREVIOUS HEADLINES</div><br/>
+
+<MTEntries lastn="5" offset="1">
+• <b><$MTEntryCategory$>:</b> <a href="<$MTEntryLink$>"><$MTEntryTitle$></a> <span class="small-note">| <$MTEntryCommentCount$> comment(s) | <$MTEntryDate format="%A, %B %d, %Y" $></span>
+<br/>
+</MTEntries>
+• <b>Read: <a href="http://home.wangjianshuo.com/archives.htm">Other entires </a></b> (complete list)<br/>
+
+<!------Recent News---->
+</div>
+<!------Recent News---->
+
+<br/>
+
+<!----------------------------Body Column Table------------------------>
+<table cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td valign=top>
+<!----------------------------Body Column Table------------------------>
+
+
+<div class="headings">Search This site</div><br/>
+<!-- Search Google -->
+<FORM method=GET action=http://www.google.com/custom>
+<INPUT TYPE=text name=q size=55 maxlength=255 value="">
+<INPUT type=submit name=sa VALUE="Search">
+<INPUT type=hidden name=cof VALUE="LW:795;L:http://home.wangjianshuo.com/archives/2003/04/13/screen-home.wangjianshuo.com-logo.PNG;LH:61;AH:center;GL:0;S:http://home.wangjianshuo.com;AWFID:90751b6033199769;">
+<input type=hidden name=domains value="wangjianshuo.com">
+<input type=hidden name=sitesearch value="wangjianshuo.com">
+</FORM>
+<!-- Search Google -->
+
+<p class=Headings>Ad</p>
+<p><script type="text/javascript"><!--
+google_ad_client = "pub-8513779941474461";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+
+
+<$MTInclude file="toc.htm"$>
+
+
+<!----------------------------Body Column Table------------------------>
+</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign=top>
+<!----------------------------Body Column Table------------------------>
+
+<!------Side Bar Headlines Table---->
+<table width=100% border=0 cellpaddig=0 cellspacing=0>
+<!------Side Bar Headlines Table---->
+
+   <tr><td><p class="RedHeadings"><b>&nbsp;COMMENTS </td>
+    </tr>
+    <tr><td>
+
+<MTEntries recently_commented_on="12">
+<MTComments lastn="1">
+     • <a href="<$MTEntryLink$>#<$MTCommentDate format="%I%M"$>">
+          <$MTCommentAuthor$> 
+       </a>
+   </MTComments>
+</a><br/>
+</MTEntries>
+• Last <a href="http://home.wangjianshuo.com/archives.htm#comments">20 comments</a>
+
+    </td></tr><tr><td>&nbsp;</td></tr>
+    <tr>
+      <td valign="top">
+      <p class="RedHeadings">&nbsp;BLOG STATSITIC </td>
+    </tr>
+    <tr>
+      <td>Created: <i>Sept 11, 2002</i><br/>
+      Entries: <i><$MTBlogEntryCount$></i><br/>
+      Categories: <i>7</i><br/>
+      Page views/day: <i>~ 4K</i><br/>
+      Comments: <i><$MTBlogCommentCount$></i><br/>
+      Location: <i>Shanghai, China</i><br/>
+      Author: <i>Jian Shuo Wang</i><br/>
+      Update Frequency: <i>daily</i><br/>
+     </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+      <p class="RedHeadings">&nbsp;LINKS </td>
+    </tr>
+    <tr>
+      <td><a href="http://home.wangjianshuo.com/scripts/links/links.htm">Links</a><br/>
+             <a href="http://home.wangjianshuo.com/archives/20030304_link_to_wangjianshuos_blog.htm">Link to my site</a><br/>
+             <a href="http://home.wangjianshuo.com/scripts/links/links.htm#add">Add your site to my links</a><br/>
+             <a href="http://home.wangjianshuo.com/archives/searchbar.htm" target="_search">Sidebar</a>
+      </td>
+    </tr>
+    <tr>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>
+      <td >
+      <p class="RedHeadings">&nbsp;CALENDAR </td>
+    </tr>
+     <tr><td>
+
+<table border="0" cellspacing="4" cellpadding="0">
+<tr>
+<td colspan="7" align="center"><span class="calendarhead"><$MTDate format="%B %Y"$></span></td>
+</tr>
+<tr>
+<td align="center"><span class="calendar">Sun</span></td>
+<td align="center"><span class="calendar">Mon</span></td>
+<td align="center"><span class="calendar">Tue</span></td>
+<td align="center"><span class="calendar">Wed</span></td>
+<td align="center"><span class="calendar">Thu</span></td>
+<td align="center"><span class="calendar">Fri</span></td>
+<td align="center"><span class="calendar">Sat</span></td>
+</tr>
+
+<MTCalendar>
+<MTCalendarWeekHeader><tr></MTCalendarWeekHeader>
+
+<td align="center"><span class="calendar">
+<MTCalendarIfEntries><MTEntries lastn="1"><a href="<$MTEntryLink$>"><$MTCalendarDay$></a></MTEntries></MTCalendarIfEntries><MTCalendarIfNoEntries><$MTCalendarDay$></MTCalendarIfNoEntries><MTCalendarIfBlank>&nbsp;</MTCalendarIfBlank></span></td><MTCalendarWeekFooter></tr></MTCalendarWeekFooter></MTCalendar>
+<tr>
+<td colspan="7" align="center"><a href="http://home.wangjianshuo.com/archives.htm">Complete list</a> of all months
+</td>
+</tr>
+</table>
+        <tr><td>&nbsp; </td></tr>
+<tr><td><p class="RedHeadings">&nbsp;SUPPORT THIS SITE</td></tr>
+<tr><td>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+Support this non-profitable, informative, and advertise-free website via trustworthy PayPal.
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="jianshuo@hotmail.com">
+<input type="hidden" name="item_name" value="Support Wangjianshuo's Blog">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="tax" value="0">
+<input type="image" src="http://home.wangjianshuo.com/archives/2003/07/08/screen-paypal-donate.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+    <tr><td><p class="RedHeadings">&nbsp;ABOUT THIS SITE</td></tr>
+    <tr><td>
+<a href="index.rdf">
+RSS 1.0 Feed</a> <a href="index.rdf"> <img src="http://home.wangjianshuo.com/archives/2003/03/28/xml.gif" border=0></a><br/>
+<a href="index.xml">
+RSS 0.91 Feed</a> <a href="index.xml"> <img src="http://home.wangjianshuo.com/archives/2003/03/28/xml.gif" border=0></a><br/>
+<a href="http://geourl.org/near/?p=http://home.wangjianshuo.com" title="check out my neighbors in meatspace">GeoURL</a> <a href="http://geourl.org/near/?p=http://home.wangjianshuo.com" title="check out my neighbors in meatspace">
+ <img src="http://geourl.org/geourl.png" border=0 width=52 height=14 />
+</a> </div>
+<div class="powered">
+Powered by <a href="http://www.movabletype.org">Movable Type <$MTVersion$></a><br />
+
+
+<a href="http://www.blogshares.com/blogs.php?blog=http%3A%2F%2Fhome.wangjianshuo.com%2F&user=827"><img src="http://www.blogshares.com/images/blogshares.jpg" alt="Listed on BlogShares" border="0" width="117" height="23"/></a><br/>
+
+<!-- Start Bravenet.com Service Code -->
+<a href="http://pub21.bravenet.com/guestmap/view.php?usernum=1781373414">
+<img src="http://images.bravenet.com/bravenet/images/guestmap/copypaste/1_1.gif" border="0"></a><!-- End Bravenet.com Service Code -->
+
+
+</td></tr>
+
+
+
+<!------Side Bar Headlines Table---->
+</table>
+<!------Side Bar Headlines Table---->
+
+
+<!----------------------------Body Column Table------------------------>
+</td></tr></table>
+<!----------------------------Body Column Table------------------------>
+<br/>
+
+<div class="comments-head">Featured Topics</div>
+<br>
+<script src="http://home.wangjianshuo.com/scripts/ads/ads.cgi"></script>
+</br>
+
+<center>&copy; 2002 - 2003 Jian Shuo Wang. All right reserved. </center>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+	document.write('<img src="/axs/ax.cgi?trans.gif&ref=');
+	document.write(document.referrer);
+	document.write('" height="1" width="1" alt="" />');
+// -->
+</script>
+
+</body>
+</html>

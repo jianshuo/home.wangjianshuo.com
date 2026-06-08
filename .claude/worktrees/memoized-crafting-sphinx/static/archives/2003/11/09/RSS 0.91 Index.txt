@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="<$MTPublishCharset$>"?>
+<!-- generator="Movable Type/<$MTVersion$>" -->
+<rss version="0.91">
+  <channel>
+    <title><$MTBlogName encode_xml="1"$></title>
+    <link><$MTBlogURL$></link>
+    <description><$MTBlogDescription encode_xml="1"$></description>
+    <language>en-us</language>
+    <webMaster><MTEntries lastn="1"><$MTEntryAuthorEmail$></MTEntries></webMaster>
+    <pubDate><MTEntries lastn="1"><$MTEntryDate language="en" format="%a, %d %b %Y %H:%M:%S"$> <$MTBlogTimezone no_colon="1"$></MTEntries></pubDate>
+<MTEntries lastn="15">
+    <item>
+      <title><$MTEntryTitle encode_xml="1"$></title>
+      <link><$MTEntryPermalink encode_xml="1"$></link>
+      <description><$MTEntryExcerpt encode_xml="1"$></description>
+    </item>
+</MTEntries>
+  </channel>
+</rss>
