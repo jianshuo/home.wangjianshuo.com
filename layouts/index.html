@@ -5,5 +5,17 @@
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><time>{{ .Date.Format "2006-01-02" }}</time></li>
   {{ end }}
 </ul>
+{{ if eq .Paginator.PageNumber 1 }}
+<aside class="related">
+  <h2>Popular Posts</h2>
+  <ul class="post-list">
+    {{ range slice "/en/1823" "/en/2399" "/en/1512" "/en/878" "/en/388" "/en/1987" "/en/890" "/en/1086" }}
+    {{ with site.GetPage . }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><time>{{ .Date.Format "2006-01-02" }}</time></li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</aside>
+{{ end }}
 {{ template "_internal/pagination.html" . }}
 {{ end }}
