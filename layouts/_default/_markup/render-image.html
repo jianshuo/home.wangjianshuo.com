@@ -3,6 +3,6 @@
   {{- $d = printf "%s%s" (site.Params.imageBaseURL | default "") $d -}}
 {{- end -}}
 <img src="{{ $d | safeURL }}"
-  {{- if eq .Ordinal 0 }} fetchpriority="high"{{ end }}
+  {{- if eq .Ordinal 0 }} fetchpriority="high"{{ else }} loading="lazy" decoding="async"{{ end }}
   {{- with .Text }} alt="{{ . }}"{{ end }}
   {{- with .Title }} title="{{ . }}"{{ end }} />
