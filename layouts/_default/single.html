@@ -14,4 +14,15 @@
   {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
   {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
 </nav>
+{{ $related := where (site.RegularPages.Related .) "Type" .Type | first 5 }}
+{{ with $related }}
+<aside class="related">
+  <h2>{{ cond $cn "相关文章" "Related Posts" }}</h2>
+  <ul class="post-list">
+    {{ range . }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><time>{{ .Date.Format "2006-01-02" }}</time></li>
+    {{ end }}
+  </ul>
+</aside>
+{{ end }}
 {{ end }}

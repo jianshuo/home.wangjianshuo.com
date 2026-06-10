@@ -14,6 +14,20 @@ timeZone = "Asia/Shanghai"
 [taxonomies]
   tag = "tags"
 
+[related]
+  includeNewer = true
+  threshold = 70
+  toLower = true
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
 [markup.goldmark.renderer]
   unsafe = true          # allow passed-through <video>/<iframe> embeds
 
