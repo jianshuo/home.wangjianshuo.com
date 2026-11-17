@@ -24,3 +24,4 @@ wp-json-data/
 # transient script artifacts
 __pycache__/
 scripts/download.log
+.claude/
